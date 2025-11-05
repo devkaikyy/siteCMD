@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+  
+}
+
+h1 {
+    font-weight: bold;
+}
+
+:root {
+  --pao-brioche: #E6B15C;
+  --carne-grelhada: #5A3A22;
+  --queijo-derretido: #F5C542;
+  --alface: #6FA35B;
+  --molho-barbecue: #A13C24;
+  --fundo-craft: #f3b12e;
+}
+
+header {
+   
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ba8125;
+     width: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.lista li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+}
+
+.lista li a:hover::after {
+    width: 100%;
+}
+
+.lista li a:hover {
+    color: #87480e;
+}
+
+.btn {
+    font-size: 35px;
+    margin-left: auto;
+    display: none;
+}
+
+.lista {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.lista.ativo {
+   left: 0;
+}
+
+@media (max-width: 780px) {
+    .lista {
+        position: absolute;
+        align-items: center;
+        top: 77px;
+        left: -300px;
+        flex-direction: column;
+        background-color: #ba8125;
+        height: 100vh;
+        width: 300px;
+        padding: 20px;
+        transition: left 0.3s ease;
+        overflow-x: auto;
+       
+    }
+    
+    li:hover {
+        text-align: center;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+
+    span.btn {
+        display: block;
+    }
+
+    .meio {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+  
+    .produtos {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .caixa-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .caixa-sobre h3 {
+        margin-top: 40px;
+    }
+
+    .rodape-conte {
+        text-align: left;
+    }
+}
+
+.hambur-01 {
+    max-width: 55%;
+    min-width: 30%;
+}
+
+.meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+    max-width: 100%;
+}
+
+.meio h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.meio p {
+    padding-bottom: 10px;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+button.comp {
+    background-color: #db6308;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+button.comp:hover {
+    background-color: #965110;
+    transition: all 0.4s ease;
+}
+
+.fotos {
+    max-width: 300px;
+}
+h2 {
+   text-align: center;
+   margin-top: 85px;
+   padding: 20px;
+   font-size: 45px;
+}
+.produtos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+     width: 100%;
+    max-width: 100%;
+}
+
+.item {
+    background-color: var(--pao-brioche);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px;
+  
+}
+
+.item button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #db6308;
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 35px;
+    margin-left: auto;
+    display: none;
+}
+
+.lista {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.lista.ativo {
+   left: 0;
+}
+
+.hambur-01 {
+   max-width: 600px;
+   width: 100%;
+   height: auto;
+}
+
+.meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.meio p {
+    padding-bottom: 10px;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+button.comp {
+    background-color: #db6308;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.fotos {
+   max-width: 600px;
+   width: 100%;
+   height: auto;
+}
+h2 {
+   text-align: center;
+   padding-top: 5rem;
+   padding: 20px;
+   font-size: 38px;
+}
+.produtos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item {
+    background-color: var(--pao-brioche);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px;
+}
+
+.item button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #db6308;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.caixa-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.caixa-sobre p {
+   max-width: 500px;
+   padding: 10px;
+   font-weight: bold;
+}
+
+.caixa-sobre h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    
+}
+
+.ft-sobre {
+   max-width: 600px;
+   width: 100%;
+   height: auto;
+}
+
+.rodape-comid {
+    background-color: var(--fundo-craft);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.rodape-conte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.rodape-conte h4 {
+    margin-bottom: 10px;
+}
+
+.links p {
+    margin: 6px;
+}
+
+.contato p {
+    margin: 6px;
+}
+
+.feito {
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--fundo-craft);
+}
