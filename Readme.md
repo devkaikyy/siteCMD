@@ -23,3 +23,4 @@ Este projeto é uma página web responsiva desenvolvida para se adaptar a difere
 Praticar a criação de layouts modernos e responsivos, aplicando boas práticas de desenvolvimento front-end.
 
 ## 🔗 Deploy
+https://devkaikyy.github.io/siteCMD/
